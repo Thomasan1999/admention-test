@@ -1,0 +1,10 @@
+{
+  "name": "admention-test",
+  "version": "1.0.0",
+  "scripts": {
+    "i": "npm run install",
+    "install": "cd client && npm i && cd ../server && composer install && php artisan key:generate && php artisan migrate",
+    "serve": "cd client && npm run serve",
+    "build": "cd client && npm run build"
+  }
+}
